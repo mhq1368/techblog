@@ -9,11 +9,65 @@
 
 import 'package:flutter/widgets.dart';
 
+class $AssetsFontsGen {
+  const $AssetsFontsGen();
+
+  /// File path: assets/fonts/Peyda-Black.ttf
+  String get peydaBlack => 'assets/fonts/Peyda-Black.ttf';
+
+  /// File path: assets/fonts/Peyda-Bold.ttf
+  String get peydaBold => 'assets/fonts/Peyda-Bold.ttf';
+
+  /// File path: assets/fonts/Peyda-ExtraBold.ttf
+  String get peydaExtraBold => 'assets/fonts/Peyda-ExtraBold.ttf';
+
+  /// File path: assets/fonts/Peyda-ExtraLight.ttf
+  String get peydaExtraLight => 'assets/fonts/Peyda-ExtraLight.ttf';
+
+  /// File path: assets/fonts/Peyda-Light.ttf
+  String get peydaLight => 'assets/fonts/Peyda-Light.ttf';
+
+  /// File path: assets/fonts/Peyda-Medium.ttf
+  String get peydaMedium => 'assets/fonts/Peyda-Medium.ttf';
+
+  /// File path: assets/fonts/Peyda-Regular.ttf
+  String get peydaRegular => 'assets/fonts/Peyda-Regular.ttf';
+
+  /// File path: assets/fonts/Peyda-SemiBold.ttf
+  String get peydaSemiBold => 'assets/fonts/Peyda-SemiBold.ttf';
+
+  /// File path: assets/fonts/Peyda-Thin.ttf
+  String get peydaThin => 'assets/fonts/Peyda-Thin.ttf';
+
+  /// List of all assets
+  List<String> get values => [
+        peydaBlack,
+        peydaBold,
+        peydaExtraBold,
+        peydaExtraLight,
+        peydaLight,
+        peydaMedium,
+        peydaRegular,
+        peydaSemiBold,
+        peydaThin
+      ];
+}
+
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
   /// File path: assets/icons/1629506.png
   AssetGenImage get a1629506 => const AssetGenImage('assets/icons/1629506.png');
+
+  /// File path: assets/icons/Mic.png
+  AssetGenImage get mic => const AssetGenImage('assets/icons/Mic.png');
+
+  /// File path: assets/icons/Pen.png
+  AssetGenImage get pen => const AssetGenImage('assets/icons/Pen.png');
+
+  /// File path: assets/icons/homeicon.png
+  AssetGenImage get homeicon =>
+      const AssetGenImage('assets/icons/homeicon.png');
 
   /// File path: assets/icons/logo.png
   AssetGenImage get logo => const AssetGenImage('assets/icons/logo.png');
@@ -26,8 +80,26 @@ class $AssetsIconsGen {
   AssetGenImage get searchicon =>
       const AssetGenImage('assets/icons/searchicon.png');
 
+  /// File path: assets/icons/usericon.png
+  AssetGenImage get usericon =>
+      const AssetGenImage('assets/icons/usericon.png');
+
+  /// File path: assets/icons/writeicon.png
+  AssetGenImage get writeicon =>
+      const AssetGenImage('assets/icons/writeicon.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [a1629506, logo, menuicon, searchicon];
+  List<AssetGenImage> get values => [
+        a1629506,
+        mic,
+        pen,
+        homeicon,
+        logo,
+        menuicon,
+        searchicon,
+        usericon,
+        writeicon
+      ];
 }
 
 class $AssetsImagesGen {
@@ -37,13 +109,23 @@ class $AssetsImagesGen {
   AssetGenImage get apppoter =>
       const AssetGenImage('assets/images/apppoter.png');
 
+  /// File path: assets/images/img1.jpg
+  AssetGenImage get img1 => const AssetGenImage('assets/images/img1.jpg');
+
+  /// File path: assets/images/img2.jpg
+  AssetGenImage get img2 => const AssetGenImage('assets/images/img2.jpg');
+
+  /// File path: assets/images/profile.png
+  AssetGenImage get profile => const AssetGenImage('assets/images/profile.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [apppoter];
+  List<AssetGenImage> get values => [apppoter, img1, img2, profile];
 }
 
 class Assets {
   Assets._();
 
+  static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:techblog/Models/fake_data.dart';
-import 'package:techblog/Models/my_colors.dart';
-import 'package:techblog/Models/settingstextstyle.dart';
+import 'package:techblog/components/fake_data.dart';
+import 'package:techblog/components/my_colors.dart';
+import 'package:techblog/components/settingstextstyle.dart';
 import 'package:techblog/gen/assets.gen.dart';
 
 class HeaderPoster extends StatelessWidget {
@@ -15,7 +15,7 @@ class HeaderPoster extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(20, 10, 15, 0),
+      padding: EdgeInsets.fromLTRB(20, 10, 25, 0),
       child: Stack(
         children: [
           ClipRRect(
@@ -23,11 +23,13 @@ class HeaderPoster extends StatelessWidget {
             child: Image.asset(
               Assets.images.apppoter.path,
               fit: BoxFit.cover,
-              height: appHeight / 4,
+              height: appHeight/4,
+              width: double.infinity,
             ),
           ),
           Container(
-              height: appHeight / 4,
+              height: appHeight/4,
+              width: double.infinity,
               decoration: BoxDecoration(
                   gradient: MyGradiant.postergradiant,
                   borderRadius: BorderRadius.circular(25))),
